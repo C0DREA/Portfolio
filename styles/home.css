@@ -1,0 +1,42 @@
+html {
+    background: rgba(23,23,23,0.65);
+    font-family: 'Inclusive Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header h1 {
+    position: absolute;
+    width: 473px;
+    height: 76.8px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 76px;
+    white-space: nowrap;
+    text-align: center;
+    color: rgba(255, 85, 0, 100%);
+    text-shadow: 0px 0px 10px rgba(255, 85, 0, 0.5);
+}
+
+#nav {
+    position: absolute;
+    width: 1031.98px;
+    height: 64px;
+    color: rgba(255, 85, 0, 100%);
+}
+
+#nav a {
+    position: absolute;
+    left: 186.52px;
+    top: 12px;
+    width: 243px;
+    height: 41px; 
+}
+
+#nav button {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-size: 64px 64px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
