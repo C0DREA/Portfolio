@@ -9,36 +9,53 @@
 
 <body>
     <!--Header section-->
-    <header>
-        <h1>C0DREA</h1>
-    </header>
-    <!--Main navigation bar-->
-    <nav aria-label="Main navigation">
-        <a href="home.html">/[Home]</a>
-        <a href="#about-me">/[About me]</a>
-        <a href="#projects">/[Projects]</a>
-        <a href="contact.html">/[Contacts]</a>
-        <!--dark mode button-->
-        <button aria-label="Toggle dark mode"><img src="resources/icons/dark-mode-icon.png" alt="Dark Mode Toggle"></button>
-    </nav>
-
+    <section id="banner">
+        <div class="banner-inner">
+            <header>
+                <h1>C0DREA</h1>
+            </header>
+        <!--Main navigation bar-->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="home.html">/[Home]</a></li>
+                    <li><a href="#about-me">/[About me]</a></li>
+                    <li><a href="#projects">/[Projects]</a></li>
+                    <li><a href="contact.html">/[Contacts]</a></li>
+                    <!--dark mode button-->
+                    <li class="dark-toggle">
+                        <button aria-label="Toggle dark mode"><img src="resources/icons/dark-mode-icon.png" alt="Dark Mode Toggle"></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
     <main>
         <!--Hero section-->
         <section id="hero">
-            <h2>>. I'm Adrian, a future web designer and front-end engineer</h2>
-            <p>>_Always curious, always learning something new</p>
-            <img src="hero-image.png" alt="Hero Image">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <h2>>. I'm Adrian, a future web designer and front-end engineer</h2>
+                    <p>>_ Always curious, always learning something new</p>
+                </div>
+                <div class="hero-media">
+                    <img src="resources/images/hero-image.png" alt="Hero Image">
+                </div>
+            </div>
         </section>
         <!--Quote section-->
         <section id="quote">
-            <blockquote>"If you want to find the secrets of the universe, think in terms of energy, frequency and vibration" - Nikola Tesla</blockquote>
+            <blockquote><\ If you want to find the secrets of the universe, think in terms of energy, frequency and vibration /></blockquote>
+            <blockquote id="author">- Nikola Tesla</blockquote>
+
         </section>
         <!--About me section-->
         <section id="about-me">
             <h2>/About Me</h2>
             <hr class="divider" aria-hidden="true"><!--Divider-->
             <p>>_ Hi, I’m Adrian — an aspiring front-end engineer currently learning to build clean, responsive, and user-friendly websites. I enjoy solving problems with my coding knowledge, and I’m always exploring new ways to improve my skills. Coding, for me, is about creativity and turning ideas into real, interactive experiences.</p>
-            <img src="about-me-image.png" alt="About Me Image">
+            <div class="about-media">
+                <img src="about-me-image.png" alt="About Me Image">
+            </div>
         </section>
         <!--Skills section-->
         <section id="skills">
@@ -49,9 +66,12 @@
             <article class="languages">
                 <h3>&gt;_Languages</h3>
                 <ul id="languages">
-                    <li>> JavaScript<img src="resources/icons/javascript-icon.png" alt="JavaScript Icon" aria-hidden="true"></li>
-                    <li>> Python<img src="resources/icons/python-icon.png" alt="Python Icon" aria-hidden="true"></li>
-                    <li>> C++<img src="resources/icons/cpp-icon.png" alt="C++ Icon" aria-hidden="true"></li>
+                    <li>> JavaScript</li>
+                    <img src="resources/icons/javascript-icon.png" alt="JavaScript Icon" aria-hidden="true">
+                    <li>> Python</li>
+                    <img src="resources/icons/python-icon.png" alt="Python Icon" aria-hidden="true">
+                    <li>> C++</li>
+                    <img src="resources/icons/cpp-icon.png" alt="C++ Icon" aria-hidden="true">
                 </ul>
             </article>
             <!--Main tools used section-->
@@ -147,7 +167,7 @@
             <p><a href="https://www.facebook.com/adrian.selaru">https://www.facebook.com/adrian.selaru</a></p>
             </article>
 
-            <img src="contact-image.png" alt="Contact Image">
+            <img src="resources/images/contact-image.png" alt="Contact Image">
 
         </section>
 
