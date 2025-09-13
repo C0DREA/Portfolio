@@ -9,7 +9,7 @@
 
 <body>
     <!--Header section-->
-    <section id="banner">
+    <section id="banner"> <!--remove double wrapper-->
         <div class="banner-inner">
             <header>
                 <h1>C0DREA</h1>
@@ -54,7 +54,7 @@
             <hr class="divider" aria-hidden="true"><!--Divider-->
             <p>>_ Hi, I’m Adrian — an aspiring front-end engineer currently learning to build clean, responsive, and user-friendly websites. I enjoy solving problems with my coding knowledge, and I’m always exploring new ways to improve my skills. Coding, for me, is about creativity and turning ideas into real, interactive experiences.</p>
             <div class="about-media">
-                <img src="about-me-image.png" alt="About Me Image">
+                <img src="resources/images/about-me-image.png" alt="About Me Image">
             </div>
         </section>
         <!--Skills section-->
@@ -63,19 +63,27 @@
             <h2>/Skills</h2>
             <hr class="divider" aria-hidden="true"><!--Divider-->
             <!--Main programming languages section-->
-            <article class="languages">
+            <article class="languages borderbox">
                 <h3>&gt;_Languages</h3>
                 <ul id="languages">
-                    <li>> JavaScript</li>
-                    <img src="resources/icons/javascript-icon.png" alt="JavaScript Icon" aria-hidden="true">
-                    <li>> Python</li>
-                    <img src="resources/icons/python-icon.png" alt="Python Icon" aria-hidden="true">
-                    <li>> C++</li>
-                    <img src="resources/icons/cpp-icon.png" alt="C++ Icon" aria-hidden="true">
+                    <li>> JavaScript<img src="resources/icons/javascript-icon.png" alt="JavaScript Icon" aria-hidden="true"></li>
+                    <li>> Python<img src="resources/icons/python-icon.png" alt="Python Icon" aria-hidden="true"></li>
+                    <li>> C++<img src="resources/icons/cpp-icon.png" alt="C++ Icon" aria-hidden="true"></li>
                 </ul>
             </article>
+
+             <!--Other "languages" and things used-->
+            <article class="other-skills borderbox">
+                <h3>&gt;_Other Skills</h3>
+                <ul id="other-skills">
+                    <li>> HTML 5<img src="resources/icons/html5-icon.png" alt="HTML 5 Icon" aria-hidden="true"></li>
+                    <li>> CSS 3<img src="resources/icons/css3-icon.png" alt="CSS 3 Icon" aria-hidden="true"></li>
+                    <li>> Markdown<img src="resources/icons/markdown-icon.png" alt="Markdown Icon" aria-hidden="true"></li>
+                </ul>
+            </article>
+            <div class="clear-fix"></div>
             <!--Main tools used section-->
-            <article class="tools">
+            <article class="tools borderbox">
                 <h3>&gt;_Tools</h3>
                 <ul id="tools">
                     <li>> VS Code<img src="resources/icons/vscode-icon.png" alt="VS Code Icon" aria-hidden="true"></li>
@@ -88,15 +96,7 @@
                     <li>> Canva<img src="resources/icons/canva-icon.png" alt="Canva Icon" aria-hidden="true"></li>
                 </ul>
             </article>
-            <!--Other "languages" and things used-->
-            <article class="other-skills">
-                <h3>&gt;_Other Skills</h3>
-                <ul id="other-skills">
-                    <li>> HTML 5<img src="resources/icons/html5-icon.png" alt="HTML 5 Icon" aria-hidden="true"></li>
-                    <li>> CSS 3<img src="resources/icons/css3-icon.png" alt="CSS 3 Icon" aria-hidden="true"></li>
-                    <li>> Markdown<img src="resources/icons/markdown-icon.png" alt="Markdown Icon" aria-hidden="true"></li>
-                </ul>
-            </article>
+           
 
             <img src="skills-image.png" alt="Skills Image">
 
