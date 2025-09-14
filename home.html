@@ -9,26 +9,25 @@
 
 <body>
     <!--Header section-->
-    <section id="banner"> <!--remove double wrapper-->
-        <div class="banner-inner">
-            <header>
-                <h1>C0DREA</h1>
-            </header>
+     <!--remove double wrapper-->
+    <div class="banner-inner">
+        <header>
+            <h1>C0DREA</h1>
+         </header>
         <!--Main navigation bar-->
-            <nav class="main-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="home.html">/[Home]</a></li>
-                    <li><a href="#about-me">/[About me]</a></li>
-                    <li><a href="#projects">/[Projects]</a></li>
-                    <li><a href="contact.html">/[Contacts]</a></li>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="home.html">/[Home]</a></li>
+                <li><a href="#about-me">/[About me]</a></li>
+                <li><a href="#projects">/[Projects]</a></li>
+                <li><a href="contact.html">/[Contacts]</a></li>
                     <!--dark mode button-->
-                    <li class="dark-toggle">
-                        <button aria-label="Toggle dark mode"><img src="resources/icons/dark-mode-icon.png" alt="Dark Mode Toggle"></button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section>
+                <li class="dark-toggle">
+                    <button aria-label="Toggle dark mode"><img src="resources/icons/dark-mode-icon.png" alt="Dark Mode Toggle"></button>
+                </li>
+            </ul>
+         </nav>
+    </div>
     <main>
         <!--Hero section-->
         <section id="hero">
@@ -52,10 +51,12 @@
         <section id="about-me">
             <h2>/About Me</h2>
             <hr class="divider" aria-hidden="true"><!--Divider-->
-            <p>>_ Hi, I’m Adrian — an aspiring front-end engineer currently learning to build clean, responsive, and user-friendly websites. I enjoy solving problems with my coding knowledge, and I’m always exploring new ways to improve my skills. Coding, for me, is about creativity and turning ideas into real, interactive experiences.</p>
-            <div class="about-media">
-                <img src="resources/images/about-me-image.png" alt="About Me Image">
-            </div>
+            <article id="about-me-info">
+                <p>>_ Hi, I’m Adrian — an aspiring front-end engineer currently learning to build clean, responsive, and user-friendly websites. I enjoy solving problems with my coding knowledge, and I’m always exploring new ways to improve my skills. Coding, for me, is about creativity and turning ideas into real, interactive experiences.</p>
+                <div class="about-media">
+                    <img src="resources/images/about-me-image.png" alt="About Me Image">
+                </div>
+            </article>
         </section>
         <!--Skills section-->
         <section id="skills">
@@ -63,75 +64,82 @@
             <h2>/Skills</h2>
             <hr class="divider" aria-hidden="true"><!--Divider-->
             <!--Main programming languages section-->
-            <article class="languages borderbox">
-                <h3>&gt;_Languages</h3>
-                <ul id="languages">
-                    <li>> JavaScript<img src="resources/icons/javascript-icon.png" alt="JavaScript Icon" aria-hidden="true"></li>
-                    <li>> Python<img src="resources/icons/python-icon.png" alt="Python Icon" aria-hidden="true"></li>
-                    <li>> C++<img src="resources/icons/cpp-icon.png" alt="C++ Icon" aria-hidden="true"></li>
-                </ul>
-            </article>
+                <div id="skills-layout">
+                    <div id="skills-lists">
+                        <div id="top-row">
+                            <article class="languages borderbox">
+                                <h3>&gt;_Languages</h3>
+                                <ul id="languages">
+                                    <li>> JavaScript<img src="resources/icons/javascript-icon.png" alt="JavaScript Icon" aria-hidden="true"></li>
+                                    <li>> Python<img src="resources/icons/python-icon.png" alt="Python Icon" aria-hidden="true"></li>
+                                    <li>> C++<img src="resources/icons/cpp-icon.png" alt="C++ Icon" aria-hidden="true"></li>
+                                </ul>
+                            </article>
 
-             <!--Other "languages" and things used-->
-            <article class="other-skills borderbox">
-                <h3>&gt;_Other Skills</h3>
-                <ul id="other-skills">
-                    <li>> HTML 5<img src="resources/icons/html5-icon.png" alt="HTML 5 Icon" aria-hidden="true"></li>
-                    <li>> CSS 3<img src="resources/icons/css3-icon.png" alt="CSS 3 Icon" aria-hidden="true"></li>
-                    <li>> Markdown<img src="resources/icons/markdown-icon.png" alt="Markdown Icon" aria-hidden="true"></li>
-                </ul>
-            </article>
-            <div class="clear-fix"></div>
-            <!--Main tools used section-->
-            <article class="tools borderbox">
-                <h3>&gt;_Tools</h3>
-                <ul id="tools">
-                    <li>> VS Code<img src="resources/icons/vscode-icon.png" alt="VS Code Icon" aria-hidden="true"></li>
-                    <li>> Figma<img src="resources/icons/figma-icon.png" alt="Figma Icon" aria-hidden="true"></li>
-                    <li>> Lunacy<img src="resources/icons/lunacy-icon.png" alt="Lunacy Icon" aria-hidden="true"></li>
-                    <li>> Git<img src="resources/icons/git-icon.png" alt="Git Icon" aria-hidden="true"></li>
-                    <li>> GitHub<img src="resources/icons/github-icon.png" alt="GitHub Icon" aria-hidden="true"></li>
-                    <li>> Photoshop<img src="resources/icons/photoshop-icon.png" alt="Photoshop Icon" aria-hidden="true"></li>
-                    <li>> Lightroom<img src="resources/icons/lightroom-icon.png" alt="Lightroom Icon" aria-hidden="true"></li>
-                    <li>> Canva<img src="resources/icons/canva-icon.png" alt="Canva Icon" aria-hidden="true"></li>
-                </ul>
-            </article>
-           
-
-            <img src="skills-image.png" alt="Skills Image">
-
+                            <!--Other "languages" and things used-->
+                            <article class="other-skills borderbox">
+                                <h3>&gt;_Other Skills</h3>
+                                <ul id="other-skills">
+                                    <li>> HTML 5<img src="resources/icons/html5-icon.png" alt="HTML 5 Icon" aria-hidden="true"></li>
+                                    <li>> CSS 3<img src="resources/icons/css3-icon.png" alt="CSS 3 Icon" aria-hidden="true"></li>
+                                    <li>> Markdown<img src="resources/icons/markdown-icon.png" alt="Markdown Icon" aria-hidden="true"></li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="clear-fix"></div>
+                        <!--Main tools used section-->
+                        <article class="tools borderbox">
+                            <h3>&gt;_Tools</h3>
+                            <ul id="tools">
+                                <li>> VS Code<img src="resources/icons/vscode-icon.png" alt="VS Code Icon" aria-hidden="true"></li>
+                                <li>> Figma<img src="resources/icons/figma-icon.png" alt="Figma Icon" aria-hidden="true"></li>
+                                <li>> Lunacy<img src="resources/icons/lunacy-icon.png" alt="Lunacy Icon" aria-hidden="true"></li>
+                                <li>> Git<img src="resources/icons/git-icon.png" alt="Git Icon" aria-hidden="true"></li>
+                                <li>> GitHub<img src="resources/icons/github-icon.png" alt="GitHub Icon" aria-hidden="true"></li>
+                                <li>> Photoshop<img src="resources/icons/photoshop-icon.png" alt="Photoshop Icon" aria-hidden="true"></li>
+                                <li>> Lightroom<img src="resources/icons/lightroom-icon.png" alt="Lightroom Icon" aria-hidden="true"></li>
+                                <li>> Canva<img src="resources/icons/canva-icon.png" alt="Canva Icon" aria-hidden="true"></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <article id="skills-image">
+                        <img src="resources/images/skills-image.png" alt="Skills Image">
+                    </article>
+                </div>
+            </section>
         </section>
         <!--Projects section-->
         <section id="projects">
 
             <h2>/Projects</h2>
             <hr class="divider" aria-hidden="true"><!--Divider-->
+            <article class="projects-cards">
             <!--1st Project-->
-            <article class="project1">
+                <div class="project-card">
 
-                <figure class="project-media" role="group" aria-labelledby="project1-title">
-                    <img src="project1-image.png" alt="Project 1 Image">
-                </figure>
+                    <figure class="project-media" role="group" aria-labelledby="project1-title">
+                        <img src="resources/images/project1-image.png" alt="Project 1 Image">
+                    </figure>
 
-                <div class="project-tech" role="note" aria-hidden="false">
-                    <span class="tech-label">HTML &amp; CSS</span>
+                    <div class="project-tech" role="note" aria-hidden="false">
+                        <span class="tech-label">HTML &amp; CSS</span>
+                    </div>
+
+                    <div class="project-details" aria-labelledby="project1-title">
+
+                        <h3 id="project1-title" class="project-name">Nocturna Aurum</h3>
+                        <p class="project-sub">Handmade candles store</p>
+                        <p class="project-links">
+                            <a class="visit-link" href="#" title="Visit Nocturna Aurum">/[Visit]</a>
+                            <a class="repo-link" href="#" title="Repository for Nocturna Aurum">/[Repo]</a>
+                        </p>
+                    </div>
                 </div>
-
-                <div class="project-details" aria-labelledby="project1-title">
-
-                    <h3 id="project1-title" class="project-name">Nocturna Aurum</h3>
-                    <p class="project-sub">Handmade candles store</p>
-                    <p class="project-links">
-                        <a class="visit-link" href="#" title="Visit Nocturna Aurum">/[Visit]</a>
-                        <a class="repo-link" href="#" title="Repository for Nocturna Aurum">/[Repo]</a>
-                    </p>
-
-                </div>
-
-            </article>
+            
             <!--Future projects will be added here-->
-            <article class="incoming-projects">
-                <h3>>.More soon ...</h3>
+                <div class="project-card" id="incoming-projects">
+                    <h3>>. More soon ...</h3>
+                </div>
             </article>
 
         </section>
@@ -142,63 +150,52 @@
             <h2>/Contacts</h2>
             <hr class="divider" aria-hidden="true"><!--Divider-->
             <h3>>_ Have a project? Or just want to connect? Let's chat!</h3>
-            <!--1st email-->
-            <article id="email1">
-            <img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true">
-            <p><a href="mailto:codrea030@gmail.com">codrea030@gmail.com</a></p>
+            <article id="contact-info">
+                <div id="contact-links">
+                    <!--1st email-->
+                    <p><img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true"><a href="mailto:codrea030@gmail.com">codrea030@gmail.com</a></p>
+                    <!--2nd email-->
+                    <p><img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true"><a href="mailto:adrianslr030@gmail.com">adrianslr030@gmail.com</a></p>
+                    <!--Linked in account-->
+                    <p><img src="resources/icons/linkedin-icon.png" alt="LinkedIn Icon" aria-hidden="true"><a href="https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/">https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/</a></p>
+                    <!--Discord user name-->
+                    <p><img src="resources/icons/discord-icon.png" alt="Discord Icon" aria-hidden="true"><a href="https://discord.com/">Codrea#9764</a></p>
+                    <!--Facebook account-->
+                    <p><img src="resources/icons/facebook-icon.png" alt="Facebook Icon" aria-hidden="true"><a href="https://www.facebook.com/adrian.selaru">https://www.facebook.com/adrian.selaru</a></p>
+                </div>
+                <div id="contact-img">
+                    <img src="resources/images/contact-image.png" alt="Contact Image">
+                </div>
             </article>
-            <!--2nd email-->
-            <article id="email2">
-            <img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true">
-            <p><a href="mailto:adrianslr030@gmail.com">adrianslr030@gmail.com</a></p>
-            </article>
-            <!--Linked in account-->
-            <article id="linkedin">
-            <img src="resources/icons/linkedin-icon.png" alt="LinkedIn Icon" aria-hidden="true">
-            <p><a href="https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/">https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/</a></p>
-            </article>
-            <!--Discord user name-->
-            <article id="discord">
-            <img src="resources/icons/discord-icon.png" alt="Discord Icon" aria-hidden="true">
-            <p><a href="https://discord.com/">Codrea#9764</a></p>
-            </article>
-            <!--Facebook account-->
-            <article id="facebook">
-            <img src="resources/icons/facebook-icon.png" alt="Facebook Icon" aria-hidden="true">
-            <p><a href="https://www.facebook.com/adrian.selaru">https://www.facebook.com/adrian.selaru</a></p>
-            </article>
-
-            <img src="resources/images/contact-image.png" alt="Contact Image">
-
         </section>
 
     </main>
     <!--Main Footer-->
     <footer>
         <!--Left part of the footer-->
-        <section id="left-footer">
-            <h2>C0DREA</h2>
-            <p>Aspiring web designer and front-end engineer</p>
-        </section>
-        <!--Right part of the footer-->
-        <section id="right-footer">
-
-            <p id="media-title">Media</p>
-            <!--Footer Media/ Social Media references-->
-            <section id="social-media-icons">
-                <a href="https://github.com/C0DREA"><img src="resources/icons/github-icon.png" alt="GitHub Icon"></a>
-                <a href="https://www.facebook.com/adrian.selaru"><img src="resources/icons/facebook-icon.png" alt="Facebook Icon"></a>
-                <a href="https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/"><img src="resources/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
-                <a href="https://www.instagram.com/adrianslr030/"><img src="resources/icons/instagram-icon.png" alt="Instagram Icon"></a>
-                <a href="https://discord.com/"><img src="resources/icons/discord-icon.png" alt="Discord Icon"></a>
-                <a href="https://steamcommunity.com/profiles/76561198104487181/"><img src="resources/icons/steam-icon.png" alt="Steam Icon"></a>
-                <a href="https://x.com/CodrinAdrian"><img src="resources/icons/x-icon.png" alt="X Icon"></a>
+        <section id="top-footer">
+            <section id="left-footer">
+                <h2>C0DREA</h2>
+                <p>Aspiring web designer and front-end engineer</p>
             </section>
-            <section id="footer-emails">
-            <img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true">
-            <p>codrea030@gmail.com / adrianslr030@gmail.com</p>
+            <!--Right part of the footer-->
+            <section id="right-footer">
+                <p id="media-title">Media</p>
+                <!--Footer Media/ Social Media references-->
+                <section id="social-media-icons">
+                    <a href="https://github.com/C0DREA"><img src="resources/icons/github-icon.png" alt="GitHub Icon"></a>
+                    <a href="https://www.facebook.com/adrian.selaru"><img src="resources/icons/facebook-icon.png" alt="Facebook Icon"></a>
+                    <a href="https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/"><img src="resources/icons/linkedin-icon.png" alt="LinkedIn Icon"></a>
+                    <a href="https://www.instagram.com/adrianslr030/"><img src="resources/icons/instagram-icon.png" alt="Instagram Icon"></a>
+                    <a href="https://discord.com/"><img src="resources/icons/discord-icon.png" alt="Discord Icon"></a>
+                    <a href="https://steamcommunity.com/profiles/76561198104487181/"><img src="resources/icons/steam-icon.png" alt="Steam Icon"></a>
+                    <a href="https://x.com/CodrinAdrian"><img src="resources/icons/x-icon.png" alt="X Icon"></a>
+                </section>
+                <section id="footer-emails">
+                    <p><img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true">codrea030@gmail.com / adrianslr030@gmail.com</p>
+                </section>
+            
             </section>
-
         </section>
         <!--Bottom part of the footer/ Copyright section-->
         <section id="bottom-footer">
