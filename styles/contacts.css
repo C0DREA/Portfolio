@@ -160,6 +160,11 @@ body {
     float: right;
 }
 
+/*Contact form section*/
+
+
+
+/*Footer section*/
 footer {
     margin-top: 200px;
 }
@@ -226,7 +231,7 @@ footer {
 /*Table view*/
 @media (max-width: 768px) {
     
-    
+
 }
 
 /*Smartphone view*/
