@@ -1,0 +1,234 @@
+:root {
+    --accent: #FF5500;
+    --main-text-color: rgba(255, 255, 255, 0.87);
+}
+
+html {
+    background-color: rgb(34, 33, 33);
+    color: var(--main-text-color);
+    font-family: 'inclusive-sans', sans-serif;
+    max-width: 1800px;
+}
+
+body {
+    width: 100%;
+}
+
+/*Inner container aligns logo + nav*/
+.banner-inner {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/*Logo*/
+.banner-inner header h1 {
+    padding: 20px;
+    margin: 0;
+    font-size: 64px;
+    font-weight: 500;
+    color: var(--accent);
+    text-shadow: 0 0 10px rgba(255, 85, 0, 0.65);
+}
+
+.banner-inner header h1 a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+/*Nav: using flexboxed list*/
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    float: right;
+    justify-content: flex-end;
+}
+
+.main-nav li { margin: 0; }
+
+.main-nav a {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0.35rem 0.55rem;
+    border-radius: 6px;
+    transition: background-color .18s, color .18s;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color: var(--main-text-color);
+}
+
+/*Dark mode button style*/
+.main-nav .dark-toggle button {
+    background: transparent;
+    border: none;
+    padding: 0.25rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--accent);
+}
+
+.main-nav .dark-toggle button img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+/*Divider*/
+.divider {
+    margin-left: 50px;
+    width: 70%;
+    height: 0.04px;
+    border: 3px solid var(--accent);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#contacts {
+    text-align: left;
+    padding: 3rem 1rem;
+    width: 100%;
+    display: block;
+}
+
+#contacts h2 {
+    text-align: left; 
+    padding: 3rem 1rem;
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 50px;
+    line-height: 1.5;
+    color: var(--accent);
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+#contact-info {
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacts h3 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-weight: 500;
+}
+
+#contact-links {
+    width: 100%;
+}
+
+#contact-links a{
+    text-decoration: none;
+    color: var(--accent);
+}
+
+#contact-links img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#contact-links p {
+    line-height: 1.6;
+    width: 100%;
+}
+
+#contact-img img{
+    width: 60%;
+    height: auto;
+    float: right;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+#top-footer {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-footer {
+    text-align: left;
+    margin-left: 30px;
+}
+
+#left-footer h2{
+    font-size: 30px;
+    color: rgba(107, 106, 106, 1);
+}
+
+#left-footer p {
+    color: var(--accent);
+    font-size: 18px;
+}
+
+#right-footer {
+    float: right;
+    margin-right: 30px;
+}
+
+#media-title {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+#social-media-icons a img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#footer-emails {
+    color: var(--accent);
+}
+
+#footer-emails img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+#bottom-footer {
+    margin-top: 50px;
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/*Making it responsive to different display sizes*/
+
+/*Table view*/
+@media (max-width: 768px) {
+    
+}
+
+/*Smartphone view*/
+@media (max-width: 640px) {
+    
+}

@@ -547,3 +547,15 @@ footer {
     justify-content: center;
     margin-bottom: 30px;
 }
+
+/*Making it responsive to different display sizes*/
+
+/*Table view*/
+@media (max-width: 768px) {
+    
+}
+
+/*Smartphone view*/
+@media (max-width: 640px) {
+    
+}
