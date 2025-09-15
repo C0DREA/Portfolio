@@ -316,16 +316,269 @@ footer {
     color: var(--accent);
 }
 
+/*Hamburger icon*/
+.menu-toggle {
+    display: none; /*hidden by default*/
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    pad: 20px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--accent);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
 /*Making it responsive to different display sizes*/
 
 /*Table view*/
 @media (max-width: 768px) {
     
+     /*Prevent side scrolling*/
+    
+    html, body {
+        max-width: 100%;
+        overflow-x:hidden;
+    }
+
+    /*Global settings*/
+    body {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    /*Header*/
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: 20px; /*Show dropdown menu*/
+    }
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 220px;
+        background: var(--background);
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .main-nav ul.active {
+        display: flex;
+    }
+
+    /*Banner / Hero Section*/
+    .banner-inner h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    #contacts h3 {
+        font-size: 25px;
+        margin: 50px 0 50px 20px;
+        align-items: center;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #contact-links {
+        margin: 0 auto;
+    }
+
+    #contact-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    #form, .form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #left-footer {
+        align-self: flex-start;
+    }
+
+    #right-footer {
+        align-self: flex-end;
+    }
+
+    #right-footer #media-title {
+        text-align: right;
+    }
+
+    #social-media-icons, #footer-emails {
+        margin-top: 30px;
+    }
+
+    #social-media-icons {
+        align-items: flex-end;
+    }
 
 }
 
 /*Smartphone view*/
 @media (max-width: 640px) {
+     
+     /*Prevent side scrolling*/
     
+    html, body {
+        max-width: 100%;
+        overflow-x:hidden;
+    }
 
+    /*Global settings*/
+    body {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    /*Header*/
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: 20px; /*Show dropdown menu*/
+    }
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 220px;
+        background: var(--background);
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .main-nav ul.active {
+        display: flex;
+    }
+
+    /*Banner / Hero Section*/
+    .banner-inner h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    #contacts h3 {
+        font-size: 22px;
+        margin: 50px 0 50px 20px;
+        align-items: center;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #contact-links {
+        margin: 0 auto;
+    }
+
+    #contact-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    #form, .form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #left-footer {
+        align-self: flex-start;
+    }
+
+    #right-footer {
+        align-self: flex-end;
+    }
+
+    #right-footer #media-title {
+        text-align: right;
+    }
+
+    #social-media-icons, #footer-emails {
+        margin-top: 30px;
+    }
+
+    #social-media-icons {
+        align-items: flex-end;
+    }
+
+}
+
+/*Light mode*/
+:root[data-theme="light"] {
+  --background: #ffffff;
+  --main-text-color: #222222;
+  --accent: #007acc;
+}
+
+:root[data-theme="dark"] {
+  --background: rgb(34, 33, 33);
+  --main-text-color: rgba(255, 255, 255, 0.87);
+  --accent: #FF5500;
+}
+
+/* small visual transition */
+html {
+  transition: background-color .18s ease, color .18s ease;
 }
