@@ -57,14 +57,30 @@
         
         <hr class="divider" aria-hidden="true"><!--Divider-->
         <!--Main contact form-->
-        <form method="post">
-            <h2>Contact me</h2>
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="title" placeholder="Title" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <input type="submit" value="/[Send]">
-        </form>
+        <section id="form">
+            <form class="form" method="post">
+                <h2>Contact me</h2>
+                <div class="form-input">
+                    <span class="input-span">
+                        <label for="name" class="label">Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </span>
+                    <span class="input-span">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </span>
+                    <span class="input-span">
+                        <label for="title" class="label">Title</label>
+                        <input type="text" name="title" id="title" required>
+                    </span>
+                    <span class="input-span">
+                        <label for="message" class="label">Message</label>
+                        <textarea type="text" name="message" id="message" required></textarea>
+                    </span>
+                </div>
+                <input type="submit" id="submit" value="/[Send]">
+            </form>
+        </section>
     </main>
     <!--Main footer section-->
     <footer>
