@@ -146,7 +146,7 @@ body {
 
 #quote #author {
     font-size: 30px;
-    color: var(--accent);
+    color: var(--main-text-color);
     display: block;
     align-items: right;
     text-align: right;
@@ -417,7 +417,7 @@ figure {
 
 #incoming-projects {
     text-align: center;
-    color: var(--accent);
+    color: var(--main-text-color);
     font-size: 35px;
 }
 
@@ -546,6 +546,10 @@ footer {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+.tag {
+    color: var(--accent);
 }
 
 /*Making it responsive to different display sizes*/

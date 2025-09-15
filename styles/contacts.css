@@ -312,6 +312,10 @@ footer {
     margin-bottom: 30px;
 }
 
+.tag {
+    color: var(--accent);
+}
+
 /*Making it responsive to different display sizes*/
 
 /*Table view*/
