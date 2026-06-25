@@ -36,7 +36,7 @@
     <main>
         <!--Hero section-->
         <section id="hero">
-            <div class="hero-inner">
+            <div class="container hero-inner">
                 <div class="hero-copy">
                     <h2><span class="tag">>.</span> I'm <span class="tag">Adrian</span>, an aspiring <span class="tag">web designer</span> and <span class="tag">front-end engineer</span></h2>
                     <p><span class="tag">>_</span> Always curious, always learning something <span class="tag">new</span></p>
@@ -54,187 +54,190 @@
         </section>
         <!--About me section-->
         <section id="about-me">
-            <h2>/About Me</h2>
-            <hr class="divider" aria-hidden="true"><!--Divider-->
-            <article id="about-me-info">
-                <p><span class="tag">>_</span> Hi, I’m <span class="tag">Adrian</span> — an aspiring <span class="tag">front-end engineer</span> currently learning to build clean, responsive, and user-friendly websites. I enjoy solving problems with my coding knowledge, and I’m always exploring new ways to improve my skills. Coding, for me, is about creativity and turning ideas into real, interactive experiences.</p>
-                <div class="about-media">
-                    <img src="resources/images/about-me-image.png" alt="About Me Image">
-                </div>
-            </article>
+            <div class="container about-me">
+                <h2>/About Me</h2>
+                <hr class="divider" aria-hidden="true"><!--Divider-->
+                <article id="about-me-info">
+                    <p><span class="tag">>_</span> Hi, I’m <span class="tag">Adrian</span> — an aspiring <span class="tag">front-end engineer</span> currently learning to build clean, responsive, and user-friendly websites. I enjoy solving problems with my coding knowledge, and I’m always exploring new ways to improve my skills. Coding, for me, is about creativity and turning ideas into real, interactive experiences.</p>
+                    <div class="about-media">
+                        <img src="resources/images/about-me-image.png" alt="About Me Image">
+                    </div>
+                </article>
+            </div>
         </section>
         <!--Skills section-->
         <section id="skills">
+            <div class="container skills">
+                <h2>/Skills</h2>
+                <hr class="divider" aria-hidden="true"><!--Divider-->
+                <!--Main programming languages section-->
+                    <div id="skills-layout">
+                        <div id="skills-lists">
+                            <div id="top-row">
+                                <article class="languages borderbox">
+                                    <h3><span class="tag">&gt;_</span> Languages</h3>
+                                    <ul id="languages">
+                                        <li><span class="tag">></span> JavaScript<img src="resources/icons/javascript-icon.png" alt="JavaScript Icon" aria-hidden="true"></li>
+                                        <li><span class="tag">></span> Python<img src="resources/icons/python-icon.png" alt="Python Icon" aria-hidden="true"></li>
+                                        <li><span class="tag">></span> C++<img src="resources/icons/cpp-icon.png" alt="C++ Icon" aria-hidden="true"></li>
+                                    </ul>
+                                </article>
 
-            <h2>/Skills</h2>
-            <hr class="divider" aria-hidden="true"><!--Divider-->
-            <!--Main programming languages section-->
-                <div id="skills-layout">
-                    <div id="skills-lists">
-                        <div id="top-row">
-                            <article class="languages borderbox">
-                                <h3><span class="tag">&gt;_</span> Languages</h3>
-                                <ul id="languages">
-                                    <li><span class="tag">></span> JavaScript<img src="resources/icons/javascript-icon.png" alt="JavaScript Icon" aria-hidden="true"></li>
-                                    <li><span class="tag">></span> Python<img src="resources/icons/python-icon.png" alt="Python Icon" aria-hidden="true"></li>
-                                    <li><span class="tag">></span> C++<img src="resources/icons/cpp-icon.png" alt="C++ Icon" aria-hidden="true"></li>
-                                </ul>
-                            </article>
-
-                            <!--Other "languages" and things used-->
-                            <article class="other-skills borderbox">
-                                <h3><span class="tag">&gt;_</span> Other Skills</h3>
-                                <ul id="other-skills">
-                                    <li><span class="tag">></span> HTML 5<img src="resources/icons/html5-icon.png" alt="HTML 5 Icon" aria-hidden="true"></li>
-                                    <li><span class="tag">></span> CSS 3<img src="resources/icons/css3-icon.png" alt="CSS 3 Icon" aria-hidden="true"></li>
-                                    <li><span class="tag">></span> Markdown<img src="resources/icons/markdown-icon.png" alt="Markdown Icon" aria-hidden="true"></li>
+                                <!--Other "languages" and things used-->
+                                <article class="other-skills borderbox">
+                                    <h3><span class="tag">&gt;_</span> Other Skills</h3>
+                                    <ul id="other-skills">
+                                        <li><span class="tag">></span> HTML 5<img src="resources/icons/html5-icon.png" alt="HTML 5 Icon" aria-hidden="true"></li>
+                                        <li><span class="tag">></span> CSS 3<img src="resources/icons/css3-icon.png" alt="CSS 3 Icon" aria-hidden="true"></li>
+                                        <li><span class="tag">></span> Markdown<img src="resources/icons/markdown-icon.png" alt="Markdown Icon" aria-hidden="true"></li>
+                                    </ul>
+                                </article>
+                            </div>
+                            <div class="clear-fix"></div>
+                            <!--Main tools used section-->
+                            <article class="tools borderbox">
+                                <h3><span class="tag">&gt;_</span> Tools</h3>
+                                <ul id="tools">
+                                    <li><span class="tag">></span> VS Code<img src="resources/icons/vscode-icon.png" alt="VS Code Icon" aria-hidden="true"></li>
+                                    <li><span class="tag">></span> Figma<img src="resources/icons/figma-icon.png" alt="Figma Icon" aria-hidden="true"></li>
+                                    <li><span class="tag">></span> Lunacy<img src="resources/icons/lunacy-icon.png" alt="Lunacy Icon" aria-hidden="true"></li>
+                                    <li><span class="tag">></span> Git<img src="resources/icons/git-icon.png" alt="Git Icon" aria-hidden="true"></li>
+                                    <li><span class="tag">></span> GitHub<img src="resources/icons/github-icon.png" alt="GitHub Icon" aria-hidden="true"></li>
+                                    <li><span class="tag">></span> Photoshop<img src="resources/icons/photoshop-icon.png" alt="Photoshop Icon" aria-hidden="true"></li>
+                                    <li><span class="tag">></span> Lightroom<img src="resources/icons/lightroom-icon.png" alt="Lightroom Icon" aria-hidden="true"></li>
+                                    <li><span class="tag">></span> Canva<img src="resources/icons/canva-icon.png" alt="Canva Icon" aria-hidden="true"></li>
                                 </ul>
                             </article>
                         </div>
-                        <div class="clear-fix"></div>
-                        <!--Main tools used section-->
-                        <article class="tools borderbox">
-                            <h3><span class="tag">&gt;_</span> Tools</h3>
-                            <ul id="tools">
-                                <li><span class="tag">></span> VS Code<img src="resources/icons/vscode-icon.png" alt="VS Code Icon" aria-hidden="true"></li>
-                                <li><span class="tag">></span> Figma<img src="resources/icons/figma-icon.png" alt="Figma Icon" aria-hidden="true"></li>
-                                <li><span class="tag">></span> Lunacy<img src="resources/icons/lunacy-icon.png" alt="Lunacy Icon" aria-hidden="true"></li>
-                                <li><span class="tag">></span> Git<img src="resources/icons/git-icon.png" alt="Git Icon" aria-hidden="true"></li>
-                                <li><span class="tag">></span> GitHub<img src="resources/icons/github-icon.png" alt="GitHub Icon" aria-hidden="true"></li>
-                                <li><span class="tag">></span> Photoshop<img src="resources/icons/photoshop-icon.png" alt="Photoshop Icon" aria-hidden="true"></li>
-                                <li><span class="tag">></span> Lightroom<img src="resources/icons/lightroom-icon.png" alt="Lightroom Icon" aria-hidden="true"></li>
-                                <li><span class="tag">></span> Canva<img src="resources/icons/canva-icon.png" alt="Canva Icon" aria-hidden="true"></li>
-                            </ul>
+                        <article id="skills-image">
+                            <img src="resources/images/skills-image.png" alt="Skills Image">
                         </article>
                     </div>
-                    <article id="skills-image">
-                        <img src="resources/images/skills-image.png" alt="Skills Image">
-                    </article>
-                </div>
-            </section>
+            </div>
         </section>
         <!--Projects section-->
         <section id="projects">
+            <div class="container projects">
+                <h2>/Projects</h2>
+                <hr class="divider" aria-hidden="true"><!--Divider-->
+                <article class="projects-cards">
+                <!--1st Project-->
+                    <div class="project-card">
 
-            <h2>/Projects</h2>
-            <hr class="divider" aria-hidden="true"><!--Divider-->
-            <article class="projects-cards">
-            <!--1st Project-->
-                <div class="project-card">
+                        <figure class="project-media" role="group" aria-labelledby="project1-title">
+                            <img src="resources/images/project1-image.png" alt="Project 1 Image">
+                        </figure>
 
-                    <figure class="project-media" role="group" aria-labelledby="project1-title">
-                        <img src="resources/images/project1-image.png" alt="Project 1 Image">
-                    </figure>
+                        <div class="project-tech" role="note" aria-hidden="false">
+                            <span class="tech-label">HTML &amp; CSS</span>
+                        </div>
 
-                    <div class="project-tech" role="note" aria-hidden="false">
-                        <span class="tech-label">HTML &amp; CSS</span>
+                        <div class="project-details" aria-labelledby="project1-title">
+
+                            <h3 id="project1-title" class="project-name">Nocturna Aurum</h3>
+                            <p class="project-sub">Handmade candles store</p>
+                            <p class="project-links">
+                                <a class="visit-link" href="https://c0drea.github.io/NOCTURNA_AURUM/" title="Visit Nocturna Aurum">/[Visit]</a>
+                                <a class="repo-link" href="https://github.com/C0DREA/NOCTURNA_AURUM.git" title="Repository for Nocturna Aurum">/[Repo]</a>
+                            </p>
+                        </div>
                     </div>
+                
+                <!--Future projects will be added here-->
+                    <div class="project-card">
 
-                    <div class="project-details" aria-labelledby="project1-title">
-
-                        <h3 id="project1-title" class="project-name">Nocturna Aurum</h3>
-                        <p class="project-sub">Handmade candles store</p>
-                        <p class="project-links">
-                            <a class="visit-link" href="https://c0drea.github.io/NOCTURNA_AURUM/" title="Visit Nocturna Aurum">/[Visit]</a>
-                            <a class="repo-link" href="https://github.com/C0DREA/NOCTURNA_AURUM.git" title="Repository for Nocturna Aurum">/[Repo]</a>
-                        </p>
-                    </div>
-                </div>
-            
-            <!--Future projects will be added here-->
-                <div class="project-card">
-
-                    <figure class="project-media" role="group" aria-labelledby="project2-title">
-                        <img src="resources/images/project2-image.png" alt="Project 2 Image">
-                    </figure>
-                    
-                    <div class="project-tech" role="note" aria-hidden="false">
-                        <span class="tech-label">HTML, CSS &amp; JavaScript (React &amp; Redux)</span>
-                    </div>
-
-                    <div class="project-details" aria-labelledby="project2-title">
-
-                        <h3 id="project2-title" class="project-name">Jamming</h3>
-                        <p class="project-sub">Custom Spotify playlist creator</p>
-                        <p class="project-links">
-                            <a class="visit-link" href="https://c0drea.github.io/Jamming-React-App/" title="Visit Jamming">/[Visit]</a>
-                            <a class="repo-link" href="https://github.com/C0DREA/Jamming-React-App" title="Repository for Jamming">/[Repo]</a>
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="project-card">
-
-                    <figure class="project-media" role="group" aria-labelledby="project3-title">
-                        <img src="resources/images/project3-image.png" alt="Project 3 Image">
-                    </figure>
-                    
-                    <div class="project-tech" role="note" aria-hidden="false">
-                        <span class="tech-label">HTML, CSS &amp; JavaScript (React &amp; Redux)</span>
-                    </div>
-
-                    <div class="project-details" aria-labelledby="project3-title">
-
-                        <h3 id="project3-title" class="project-name">Threadstate</h3>
-                        <p class="project-sub">Reddit client</p>
-                        <p class="project-links">
-                            <a class="visit-link" href="https://c0drea.github.io/ThreadState/" title="Visit Threadstate">/[Visit]</a>
-                            <a class="repo-link" href="https://github.com/C0DREA/ThreadState" title="Repository for Threadstate">/[Repo]</a>
-                        </p>
+                        <figure class="project-media" role="group" aria-labelledby="project2-title">
+                            <img src="resources/images/project2-image.png" alt="Project 2 Image">
+                        </figure>
                         
+                        <div class="project-tech" role="note" aria-hidden="false">
+                            <span class="tech-label">HTML, CSS &amp; JavaScript (React &amp; Redux)</span>
+                        </div>
+
+                        <div class="project-details" aria-labelledby="project2-title">
+
+                            <h3 id="project2-title" class="project-name">Jamming</h3>
+                            <p class="project-sub">Custom Spotify playlist creator</p>
+                            <p class="project-links">
+                                <a class="visit-link" href="https://c0drea.github.io/Jamming-React-App/" title="Visit Jamming">/[Visit]</a>
+                                <a class="repo-link" href="https://github.com/C0DREA/Jamming-React-App" title="Repository for Jamming">/[Repo]</a>
+                            </p>
+
+                        </div>
                     </div>
-                </div>
 
-                <div class="project-card">
+                    <div class="project-card">
 
-                    <figure class="project-media" role="group" aria-labelledby="project4-title">
-                        <img src="resources/images/project4-image.png" alt="Project 4 Image">
-                    </figure>
-                    
-                    <div class="project-tech" role="note" aria-hidden="false">
-                        <span class="tech-label">HTML, CSS &amp; JavaScript (React &amp; Redux)</span>
-                    </div>
-
-                    <div class="project-details" aria-labelledby="project4-title">
-
-                        <h3 id="project4-title" class="project-name">Nexus Wallet</h3>
-                        <p class="project-sub">Personal finance app with an AI-inspired analysis system and a HIL (Human-in-the-Loop) validation workflow</p>
-                        <p class="project-links">
-                            <a class="visit-link" href="https://c0drea.github.io/Nexus_Wallet/" title="Visit Nexus Wallet">/[Visit]</a>
-                            <a class="repo-link" href="https://github.com/C0DREA/Nexus_Wallet" title="Repository for Nexus Wallet">/[Repo]</a>
-                        </p>
+                        <figure class="project-media" role="group" aria-labelledby="project3-title">
+                            <img src="resources/images/project3-image.png" alt="Project 3 Image">
+                        </figure>
                         
+                        <div class="project-tech" role="note" aria-hidden="false">
+                            <span class="tech-label">HTML, CSS &amp; JavaScript (React &amp; Redux)</span>
+                        </div>
+
+                        <div class="project-details" aria-labelledby="project3-title">
+
+                            <h3 id="project3-title" class="project-name">Threadstate</h3>
+                            <p class="project-sub">Reddit client</p>
+                            <p class="project-links">
+                                <a class="visit-link" href="https://c0drea.github.io/ThreadState/" title="Visit Threadstate">/[Visit]</a>
+                                <a class="repo-link" href="https://github.com/C0DREA/ThreadState" title="Repository for Threadstate">/[Repo]</a>
+                            </p>
+                            
+                        </div>
                     </div>
-                </div>
 
-            </article>
+                    <div class="project-card">
 
+                        <figure class="project-media" role="group" aria-labelledby="project4-title">
+                            <img src="resources/images/project4-image.png" alt="Project 4 Image">
+                        </figure>
+                        
+                        <div class="project-tech" role="note" aria-hidden="false">
+                            <span class="tech-label">HTML, CSS &amp; JavaScript (React &amp; Redux)</span>
+                        </div>
+
+                        <div class="project-details" aria-labelledby="project4-title">
+
+                            <h3 id="project4-title" class="project-name">Nexus Wallet</h3>
+                            <p class="project-sub">Personal finance app with an AI-inspired analysis system and a HIL (Human-in-the-Loop) validation workflow</p>
+                            <p class="project-links">
+                                <a class="visit-link" href="https://c0drea.github.io/Nexus_Wallet/" title="Visit Nexus Wallet">/[Visit]</a>
+                                <a class="repo-link" href="https://github.com/C0DREA/Nexus_Wallet" title="Repository for Nexus Wallet">/[Repo]</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+
+                </article>
+            </div>
         </section>
 
         <!--Main contacts section-->
         <section id="contacts">
-
-            <h2>/Contacts</h2>
-            <hr class="divider" aria-hidden="true"><!--Divider-->
-            <h3><span class="tag">>_</span> Have a project? Or just want to connect? <span class="tag">Let's chat!</span></h3>
-            <article id="contact-info">
-                <div id="contact-links">
-                    <!--1st email-->
-                    <p><img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true"><a href="mailto:codrea030@gmail.com">codrea030@gmail.com</a></p>
-                    <!--2nd email-->
-                    <p><img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true"><a href="mailto:adrianslr030@gmail.com">adrianslr030@gmail.com</a></p>
-                    <!--Linked in account-->
-                    <p><img src="resources/icons/linkedin-icon.png" alt="LinkedIn Icon" aria-hidden="true"><a href="https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/">https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/</a></p>
-                    <!--Discord user name-->
-                    <p><img src="resources/icons/discord-icon.png" alt="Discord Icon" aria-hidden="true"><a href="https://discord.com/">Codrea#9764</a></p>
-                    <!--Facebook account-->
-                    <p><img src="resources/icons/facebook-icon.png" alt="Facebook Icon" aria-hidden="true"><a href="https://www.facebook.com/adrian.selaru">https://www.facebook.com/adrian.selaru</a></p>
-                </div>
-                <div id="contact-img">
-                    <img src="resources/images/contact-image.png" alt="Contact Image">
-                </div>
-            </article>
+            <div class="container contacts">
+                <h2>/Contacts</h2>
+                <hr class="divider" aria-hidden="true"><!--Divider-->
+                <h3><span class="tag">>_</span> Have a project? Or just want to connect? <span class="tag">Let's chat!</span></h3>
+                <article id="contact-info">
+                    <div id="contact-links">
+                        <!--1st email-->
+                        <p><img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true"><a href="mailto:codrea030@gmail.com">codrea030@gmail.com</a></p>
+                        <!--2nd email-->
+                        <p><img src="resources/icons/email-icon.png" alt="Email Icon" aria-hidden="true"><a href="mailto:adrianslr030@gmail.com">adrianslr030@gmail.com</a></p>
+                        <!--Linked in account-->
+                        <p><img src="resources/icons/linkedin-icon.png" alt="LinkedIn Icon" aria-hidden="true"><a href="https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/">https://www.linkedin.com/in/codrin-adrian-selaru-6590991b3/</a></p>
+                        <!--Discord user name-->
+                        <p><img src="resources/icons/discord-icon.png" alt="Discord Icon" aria-hidden="true"><a href="https://discord.com/">Codrea#9764</a></p>
+                        <!--Facebook account-->
+                        <p><img src="resources/icons/facebook-icon.png" alt="Facebook Icon" aria-hidden="true"><a href="https://www.facebook.com/adrian.selaru">https://www.facebook.com/adrian.selaru</a></p>
+                    </div>
+                    <div id="contact-img">
+                        <img src="resources/images/contact-image.png" alt="Contact Image">
+                    </div>
+                </article>
+            </div>
         </section>
 
     </main>
